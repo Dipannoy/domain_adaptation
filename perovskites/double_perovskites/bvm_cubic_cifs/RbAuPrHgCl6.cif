@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_RbPrHgAuCl6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.78899565
+_cell_length_b   7.78899619
+_cell_length_c   7.78899600
+_cell_angle_alpha   60.00000080
+_cell_angle_beta   59.99999851
+_cell_angle_gamma   60.00000375
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   RbPrHgAuCl6
+_chemical_formula_sum   'Rb1 Pr1 Hg1 Au1 Cl6'
+_cell_volume   334.14075193
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Rb  Rb0  1  0.25000000  0.25000000  0.25000000  1
+  Au  Au1  1  0.75000000  0.75000000  0.75000000  1
+  Pr  Pr2  1  0.00000000  0.00000000  0.00000000  1
+  Hg  Hg3  1  0.50000000  0.50000000  0.50000000  1
+  Cl  Cl4  1  0.75000000  0.75000000  0.25000000  1
+  Cl  Cl5  1  0.25000000  0.25000000  0.75000000  1
+  Cl  Cl6  1  0.75000000  0.25000000  0.75000000  1
+  Cl  Cl7  1  0.25000000  0.75000000  0.25000000  1
+  Cl  Cl8  1  0.25000000  0.75000000  0.75000000  1
+  Cl  Cl9  1  0.75000000  0.25000000  0.25000000  1

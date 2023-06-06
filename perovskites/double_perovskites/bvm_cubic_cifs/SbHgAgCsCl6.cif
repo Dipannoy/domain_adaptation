@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_CsAgHgSbCl6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.07853480
+_cell_length_b   9.07853402
+_cell_length_c   9.07853500
+_cell_angle_alpha   60.00000006
+_cell_angle_beta   60.00000292
+_cell_angle_gamma   60.00000119
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsAgHgSbCl6
+_chemical_formula_sum   'Cs1 Ag1 Hg1 Sb1 Cl6'
+_cell_volume   529.09331713
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sb  Sb0  1  0.25000000  0.25000000  0.25000000  1
+  Hg  Hg1  1  0.75000000  0.75000000  0.75000000  1
+  Ag  Ag2  1  0.00000000  0.00000000  0.00000000  1
+  Cs  Cs3  1  0.50000000  0.50000000  0.50000000  1
+  Cl  Cl4  1  0.75000000  0.75000000  0.25000000  1
+  Cl  Cl5  1  0.25000000  0.25000000  0.75000000  1
+  Cl  Cl6  1  0.75000000  0.25000000  0.75000000  1
+  Cl  Cl7  1  0.25000000  0.75000000  0.25000000  1
+  Cl  Cl8  1  0.25000000  0.75000000  0.75000000  1
+  Cl  Cl9  1  0.75000000  0.25000000  0.25000000  1

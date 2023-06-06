@@ -1,0 +1,522 @@
+WARNING:kgcnn.model.utils:Model kwargs: Overwriting dictionary of output_mlp with None
+INFO:kgcnn.model.utils:Updated model kwargs:
+INFO:kgcnn.model.utils:{'name': 'Schnet', 'inputs': [{'shape': (None,), 'name': 'node_number', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 3), 'name': 'node_coordinates', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 2), 'name': 'range_indices', 'dtype': 'int64', 'ragged': True}, {'shape': (None, 3), 'name': 'range_image', 'dtype': 'int64', 'ragged': True}, {'shape': (3, 3), 'name': 'graph_lattice', 'dtype': 'float32', 'ragged': False}], 'input_embedding': {'node': {'input_dim': 95, 'output_dim': 64}}, 'make_distance': True, 'expand_distance': True, 'interaction_args': {'units': 128, 'use_bias': True, 'activation': 'kgcnn>shifted_softplus', 'cfconv_pool': 'sum'}, 'node_pooling_args': {'pooling_method': 'mean'}, 'depth': 8, 'gauss_args': {'bins': 25, 'distance': 8, 'offset': 0.0, 'sigma': 0.4}, 'verbose': 10, 'last_mlp': {'use_bias': [True, True, True], 'units': [128, 64, 1], 'activation': ['kgcnn>shifted_softplus', 'kgcnn>shifted_softplus', 'linear']}, 'output_embedding': 'graph', 'output_to_tensor': True, 'use_output_mlp': False, 'output_mlp': None}
+WARNING:kgcnn.model.utils:Model kwargs: Overwriting dictionary of output_mlp with None
+INFO:kgcnn.model.utils:Updated model kwargs:
+INFO:kgcnn.model.utils:{'name': 'Schnet', 'inputs': [{'shape': (None,), 'name': 'node_number', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 3), 'name': 'node_coordinates', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 2), 'name': 'range_indices', 'dtype': 'int64', 'ragged': True}, {'shape': (None, 3), 'name': 'range_image', 'dtype': 'int64', 'ragged': True}, {'shape': (3, 3), 'name': 'graph_lattice', 'dtype': 'float32', 'ragged': False}], 'input_embedding': {'node': {'input_dim': 95, 'output_dim': 64}}, 'make_distance': True, 'expand_distance': True, 'interaction_args': {'units': 128, 'use_bias': True, 'activation': 'kgcnn>shifted_softplus', 'cfconv_pool': 'sum'}, 'node_pooling_args': {'pooling_method': 'mean'}, 'depth': 8, 'gauss_args': {'bins': 25, 'distance': 8, 'offset': 0.0, 'sigma': 0.4}, 'verbose': 10, 'last_mlp': {'use_bias': [True, True, True], 'units': [128, 64, 1], 'activation': ['kgcnn>shifted_softplus', 'kgcnn>shifted_softplus', 'linear']}, 'output_embedding': 'graph', 'output_to_tensor': True, 'use_output_mlp': False, 'output_mlp': None}
+WARNING:kgcnn.model.utils:Model kwargs: Overwriting dictionary of output_mlp with None
+INFO:kgcnn.model.utils:Updated model kwargs:
+INFO:kgcnn.model.utils:{'name': 'Schnet', 'inputs': [{'shape': (None,), 'name': 'node_number', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 3), 'name': 'node_coordinates', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 2), 'name': 'range_indices', 'dtype': 'int64', 'ragged': True}, {'shape': (None, 3), 'name': 'range_image', 'dtype': 'int64', 'ragged': True}, {'shape': (3, 3), 'name': 'graph_lattice', 'dtype': 'float32', 'ragged': False}], 'input_embedding': {'node': {'input_dim': 95, 'output_dim': 64}}, 'make_distance': True, 'expand_distance': True, 'interaction_args': {'units': 128, 'use_bias': True, 'activation': 'kgcnn>shifted_softplus', 'cfconv_pool': 'sum'}, 'node_pooling_args': {'pooling_method': 'mean'}, 'depth': 8, 'gauss_args': {'bins': 25, 'distance': 8, 'offset': 0.0, 'sigma': 0.4}, 'verbose': 10, 'last_mlp': {'use_bias': [True, True, True], 'units': [128, 64, 1], 'activation': ['kgcnn>shifted_softplus', 'kgcnn>shifted_softplus', 'linear']}, 'output_embedding': 'graph', 'output_to_tensor': True, 'use_output_mlp': False, 'output_mlp': None}
+[34m[1mwandb[39m[22m: [33mWARNING[39m The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)...
+
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)...
+
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_3_layer_call_fn, gather_embedding_selection_3_layer_call_and_return_conditional_losses, gather_state_3_layer_call_fn, gather_state_3_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+21/21 [==============================] - 0s 16ms/step - loss: 0.0272 - mean_absolute_error: 0.0272
+2/2 [==============================] - 0s 8ms/step - loss: 0.0303 - mean_absolute_error: 0.0303
+2/2 [==============================] - 0s 8ms/step - loss: 0.0281 - mean_absolute_error: 0.0281
+[0.027221841737627983]
+0.027221841737627983
+0.0
+[0.03033551760017872]
+0.03033551760017872
+0.0
+[0.028139561414718628]
+0.028139561414718628
+0.0
+WARNING:kgcnn.model.utils:Model kwargs: Overwriting dictionary of output_mlp with None
+INFO:kgcnn.model.utils:Updated model kwargs:
+INFO:kgcnn.model.utils:{'name': 'Schnet', 'inputs': [{'shape': (None,), 'name': 'node_number', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 3), 'name': 'node_coordinates', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 2), 'name': 'range_indices', 'dtype': 'int64', 'ragged': True}, {'shape': (None, 3), 'name': 'range_image', 'dtype': 'int64', 'ragged': True}, {'shape': (3, 3), 'name': 'graph_lattice', 'dtype': 'float32', 'ragged': False}], 'input_embedding': {'node': {'input_dim': 95, 'output_dim': 64}}, 'make_distance': True, 'expand_distance': True, 'interaction_args': {'units': 128, 'use_bias': True, 'activation': 'kgcnn>shifted_softplus', 'cfconv_pool': 'sum'}, 'node_pooling_args': {'pooling_method': 'mean'}, 'depth': 8, 'gauss_args': {'bins': 25, 'distance': 8, 'offset': 0.0, 'sigma': 0.4}, 'verbose': 10, 'last_mlp': {'use_bias': [True, True, True], 'units': [128, 64, 1], 'activation': ['kgcnn>shifted_softplus', 'kgcnn>shifted_softplus', 'linear']}, 'output_embedding': 'graph', 'output_to_tensor': True, 'use_output_mlp': False, 'output_mlp': None}
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_4_layer_call_fn, gather_embedding_selection_4_layer_call_and_return_conditional_losses, gather_state_4_layer_call_fn, gather_state_4_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_4_layer_call_fn, gather_embedding_selection_4_layer_call_and_return_conditional_losses, gather_state_4_layer_call_fn, gather_state_4_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_4_layer_call_fn, gather_embedding_selection_4_layer_call_and_return_conditional_losses, gather_state_4_layer_call_fn, gather_state_4_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+21/21 [==============================] - 0s 16ms/step - loss: 0.0280 - mean_absolute_error: 0.0280
+2/2 [==============================] - 0s 9ms/step - loss: 0.0280 - mean_absolute_error: 0.0280
+2/2 [==============================] - 0s 9ms/step - loss: 0.0306 - mean_absolute_error: 0.0306
+[0.027221841737627983, 0.027959229424595833]
+0.027590535581111908
+0.00036869384348392487
+[0.03033551760017872, 0.027992477640509605]
+0.029163997620344162
+0.0011715199798345566
+[0.028139561414718628, 0.030554410070180893]
+0.02934698574244976
+0.0012074243277311325
+WARNING:kgcnn.model.utils:Model kwargs: Overwriting dictionary of output_mlp with None
+INFO:kgcnn.model.utils:Updated model kwargs:
+INFO:kgcnn.model.utils:{'name': 'Schnet', 'inputs': [{'shape': (None,), 'name': 'node_number', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 3), 'name': 'node_coordinates', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 2), 'name': 'range_indices', 'dtype': 'int64', 'ragged': True}, {'shape': (None, 3), 'name': 'range_image', 'dtype': 'int64', 'ragged': True}, {'shape': (3, 3), 'name': 'graph_lattice', 'dtype': 'float32', 'ragged': False}], 'input_embedding': {'node': {'input_dim': 95, 'output_dim': 64}}, 'make_distance': True, 'expand_distance': True, 'interaction_args': {'units': 128, 'use_bias': True, 'activation': 'kgcnn>shifted_softplus', 'cfconv_pool': 'sum'}, 'node_pooling_args': {'pooling_method': 'mean'}, 'depth': 8, 'gauss_args': {'bins': 25, 'distance': 8, 'offset': 0.0, 'sigma': 0.4}, 'verbose': 10, 'last_mlp': {'use_bias': [True, True, True], 'units': [128, 64, 1], 'activation': ['kgcnn>shifted_softplus', 'kgcnn>shifted_softplus', 'linear']}, 'output_embedding': 'graph', 'output_to_tensor': True, 'use_output_mlp': False, 'output_mlp': None}
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_8 in the SavedModel.
+WARNING:absl:Found untraced functions such as _update_step_xla, gather_embedding_selection_5_layer_call_fn, gather_embedding_selection_5_layer_call_and_return_conditional_losses, gather_state_5_layer_call_fn, gather_state_5_layer_call_and_return_conditional_losses while saving (showing 5 of 311). These functions will not be directly callable after loading.
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+INFO:tensorflow:Assets written to: /home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best/assets
+[34m[1mwandb[39m[22m: Adding directory to artifact (/home/chris/Desktop/gnn_model/gcnn_keras/notebooks/wandb/run-20230518_134650-91s3hynr/files/model-best)... Done. 0.0s
+21/21 [==============================] - 0s 17ms/step - loss: 0.0210 - mean_absolute_error: 0.0210
+2/2 [==============================] - 0s 9ms/step - loss: 0.0244 - mean_absolute_error: 0.0244
+2/2 [==============================] - 0s 9ms/step - loss: 0.0260 - mean_absolute_error: 0.0260
+[0.027221841737627983, 0.027959229424595833, 0.02096889168024063]
+0.025383320947488148
+0.003135955406450751
+[0.03033551760017872, 0.027992477640509605, 0.024379119277000427]
+0.027569038172562916
+0.0024500538746935778
+[0.028139561414718628, 0.030554410070180893, 0.02599639818072319]
+0.028230123221874237
+0.0018619021056965573
+WARNING:kgcnn.model.utils:Model kwargs: Overwriting dictionary of output_mlp with None
+INFO:kgcnn.model.utils:Updated model kwargs:
+INFO:kgcnn.model.utils:{'name': 'Schnet', 'inputs': [{'shape': (None,), 'name': 'node_number', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 3), 'name': 'node_coordinates', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 2), 'name': 'range_indices', 'dtype': 'int64', 'ragged': True}, {'shape': (None, 3), 'name': 'range_image', 'dtype': 'int64', 'ragged': True}, {'shape': (3, 3), 'name': 'graph_lattice', 'dtype': 'float32', 'ragged': False}], 'input_embedding': {'node': {'input_dim': 95, 'output_dim': 64}}, 'make_distance': True, 'expand_distance': True, 'interaction_args': {'units': 128, 'use_bias': True, 'activation': 'kgcnn>shifted_softplus', 'cfconv_pool': 'sum'}, 'node_pooling_args': {'pooling_method': 'mean'}, 'depth': 8, 'gauss_args': {'bins': 25, 'distance': 8, 'offset': 0.0, 'sigma': 0.4}, 'verbose': 10, 'last_mlp': {'use_bias': [True, True, True], 'units': [128, 64, 1], 'activation': ['kgcnn>shifted_softplus', 'kgcnn>shifted_softplus', 'linear']}, 'output_embedding': 'graph', 'output_to_tensor': True, 'use_output_mlp': False, 'output_mlp': None}
+WARNING:kgcnn.model.utils:Model kwargs: Overwriting dictionary of output_mlp with None
+INFO:kgcnn.model.utils:Updated model kwargs:
+INFO:kgcnn.model.utils:{'name': 'Schnet', 'inputs': [{'shape': (None,), 'name': 'node_number', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 3), 'name': 'node_coordinates', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 2), 'name': 'range_indices', 'dtype': 'int64', 'ragged': True}, {'shape': (None, 3), 'name': 'range_image', 'dtype': 'int64', 'ragged': True}, {'shape': (3, 3), 'name': 'graph_lattice', 'dtype': 'float32', 'ragged': False}], 'input_embedding': {'node': {'input_dim': 95, 'output_dim': 64}}, 'make_distance': True, 'expand_distance': True, 'interaction_args': {'units': 128, 'use_bias': True, 'activation': 'kgcnn>shifted_softplus', 'cfconv_pool': 'sum'}, 'node_pooling_args': {'pooling_method': 'mean'}, 'depth': 8, 'gauss_args': {'bins': 25, 'distance': 8, 'offset': 0.0, 'sigma': 0.4}, 'verbose': 10, 'last_mlp': {'use_bias': [True, True, True], 'units': [128, 64, 1], 'activation': ['kgcnn>shifted_softplus', 'kgcnn>shifted_softplus', 'linear']}, 'output_embedding': 'graph', 'output_to_tensor': True, 'use_output_mlp': False, 'output_mlp': None}
+WARNING:kgcnn.model.utils:Model kwargs: Overwriting dictionary of output_mlp with None
+INFO:kgcnn.model.utils:Updated model kwargs:
+INFO:kgcnn.model.utils:{'name': 'Schnet', 'inputs': [{'shape': (None,), 'name': 'node_number', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 3), 'name': 'node_coordinates', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 2), 'name': 'range_indices', 'dtype': 'int64', 'ragged': True}, {'shape': (None, 3), 'name': 'range_image', 'dtype': 'int64', 'ragged': True}, {'shape': (3, 3), 'name': 'graph_lattice', 'dtype': 'float32', 'ragged': False}], 'input_embedding': {'node': {'input_dim': 95, 'output_dim': 64}}, 'make_distance': True, 'expand_distance': True, 'interaction_args': {'units': 128, 'use_bias': True, 'activation': 'kgcnn>shifted_softplus', 'cfconv_pool': 'sum'}, 'node_pooling_args': {'pooling_method': 'mean'}, 'depth': 8, 'gauss_args': {'bins': 25, 'distance': 8, 'offset': 0.0, 'sigma': 0.4}, 'verbose': 10, 'last_mlp': {'use_bias': [True, True, True], 'units': [128, 64, 1], 'activation': ['kgcnn>shifted_softplus', 'kgcnn>shifted_softplus', 'linear']}, 'output_embedding': 'graph', 'output_to_tensor': True, 'use_output_mlp': False, 'output_mlp': None}
+WARNING:kgcnn.model.utils:Model kwargs: Overwriting dictionary of output_mlp with None
+INFO:kgcnn.model.utils:Updated model kwargs:
+INFO:kgcnn.model.utils:{'name': 'Schnet', 'inputs': [{'shape': (None,), 'name': 'node_number', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 3), 'name': 'node_coordinates', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 2), 'name': 'range_indices', 'dtype': 'int64', 'ragged': True}, {'shape': (None, 3), 'name': 'range_image', 'dtype': 'int64', 'ragged': True}, {'shape': (3, 3), 'name': 'graph_lattice', 'dtype': 'float32', 'ragged': False}], 'input_embedding': {'node': {'input_dim': 95, 'output_dim': 64}}, 'make_distance': True, 'expand_distance': True, 'interaction_args': {'units': 128, 'use_bias': True, 'activation': 'kgcnn>shifted_softplus', 'cfconv_pool': 'sum'}, 'node_pooling_args': {'pooling_method': 'mean'}, 'depth': 8, 'gauss_args': {'bins': 25, 'distance': 8, 'offset': 0.0, 'sigma': 0.4}, 'verbose': 10, 'last_mlp': {'use_bias': [True, True, True], 'units': [128, 64, 1], 'activation': ['kgcnn>shifted_softplus', 'kgcnn>shifted_softplus', 'linear']}, 'output_embedding': 'graph', 'output_to_tensor': True, 'use_output_mlp': False, 'output_mlp': None}
+21/21 [==============================] - 0s 17ms/step - loss: 0.0287 - mean_absolute_error: 0.0287
+2/2 [==============================] - 0s 8ms/step - loss: 0.0314 - mean_absolute_error: 0.0314
+2/2 [==============================] - 0s 9ms/step - loss: 0.0291 - mean_absolute_error: 0.0291
+WARNING:kgcnn.model.utils:Model kwargs: Overwriting dictionary of output_mlp with None
+INFO:kgcnn.model.utils:Updated model kwargs:
+INFO:kgcnn.model.utils:{'name': 'Schnet', 'inputs': [{'shape': (None,), 'name': 'node_number', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 3), 'name': 'node_coordinates', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 2), 'name': 'range_indices', 'dtype': 'int64', 'ragged': True}, {'shape': (None, 3), 'name': 'range_image', 'dtype': 'int64', 'ragged': True}, {'shape': (3, 3), 'name': 'graph_lattice', 'dtype': 'float32', 'ragged': False}], 'input_embedding': {'node': {'input_dim': 95, 'output_dim': 64}}, 'make_distance': True, 'expand_distance': True, 'interaction_args': {'units': 128, 'use_bias': True, 'activation': 'kgcnn>shifted_softplus', 'cfconv_pool': 'sum'}, 'node_pooling_args': {'pooling_method': 'mean'}, 'depth': 8, 'gauss_args': {'bins': 25, 'distance': 8, 'offset': 0.0, 'sigma': 0.4}, 'verbose': 10, 'last_mlp': {'use_bias': [True, True, True], 'units': [128, 64, 1], 'activation': ['kgcnn>shifted_softplus', 'kgcnn>shifted_softplus', 'linear']}, 'output_embedding': 'graph', 'output_to_tensor': True, 'use_output_mlp': False, 'output_mlp': None}
+ 1/21 [>.............................] - ETA: 0s - loss: 0.1808 - mean_absolute_error: 0.1808
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+21/21 [==============================] - 0s 17ms/step - loss: 0.1532 - mean_absolute_error: 0.1532
+2/2 [==============================] - 0s 10ms/step - loss: 0.1847 - mean_absolute_error: 0.1847
+2/2 [==============================] - 0s 10ms/step - loss: 0.1447 - mean_absolute_error: 0.1447
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:kgcnn.model.utils:Model kwargs: Overwriting dictionary of output_mlp with None
+INFO:kgcnn.model.utils:Updated model kwargs:
+INFO:kgcnn.model.utils:{'name': 'Schnet', 'inputs': [{'shape': (None,), 'name': 'node_number', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 3), 'name': 'node_coordinates', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 2), 'name': 'range_indices', 'dtype': 'int64', 'ragged': True}, {'shape': (None, 3), 'name': 'range_image', 'dtype': 'int64', 'ragged': True}, {'shape': (3, 3), 'name': 'graph_lattice', 'dtype': 'float32', 'ragged': False}], 'input_embedding': {'node': {'input_dim': 95, 'output_dim': 64}}, 'make_distance': True, 'expand_distance': True, 'interaction_args': {'units': 128, 'use_bias': True, 'activation': 'kgcnn>shifted_softplus', 'cfconv_pool': 'sum'}, 'node_pooling_args': {'pooling_method': 'mean'}, 'depth': 8, 'gauss_args': {'bins': 25, 'distance': 8, 'offset': 0.0, 'sigma': 0.4}, 'verbose': 10, 'last_mlp': {'use_bias': [True, True, True], 'units': [128, 64, 1], 'activation': ['kgcnn>shifted_softplus', 'kgcnn>shifted_softplus', 'linear']}, 'output_embedding': 'graph', 'output_to_tensor': True, 'use_output_mlp': False, 'output_mlp': None}
+[0.1532311737537384]
+0.1532311737537384
+0.0
+[0.1846841275691986]
+0.1846841275691986
+0.0
+[0.1446733921766281]
+0.1446733921766281
+0.0
+21/21 [==============================] - 0s 18ms/step - loss: 0.2282 - mean_absolute_error: 0.2282
+2/2 [==============================] - 0s 10ms/step - loss: 0.2118 - mean_absolute_error: 0.2118
+2/2 [==============================] - 0s 8ms/step - loss: 0.2138 - mean_absolute_error: 0.2138
+[0.1532311737537384, 0.2282261699438095]
+0.19072867184877396
+0.03749749809503555
+[0.1846841275691986, 0.21180137991905212]
+0.19824275374412537
+0.013558626174926758
+[0.1446733921766281, 0.21377019584178925]
+0.17922179400920868
+0.034548401832580566
+WARNING:kgcnn.model.utils:Model kwargs: Overwriting dictionary of output_mlp with None
+INFO:kgcnn.model.utils:Updated model kwargs:
+INFO:kgcnn.model.utils:{'name': 'Schnet', 'inputs': [{'shape': (None,), 'name': 'node_number', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 3), 'name': 'node_coordinates', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 2), 'name': 'range_indices', 'dtype': 'int64', 'ragged': True}, {'shape': (None, 3), 'name': 'range_image', 'dtype': 'int64', 'ragged': True}, {'shape': (3, 3), 'name': 'graph_lattice', 'dtype': 'float32', 'ragged': False}], 'input_embedding': {'node': {'input_dim': 95, 'output_dim': 64}}, 'make_distance': True, 'expand_distance': True, 'interaction_args': {'units': 128, 'use_bias': True, 'activation': 'kgcnn>shifted_softplus', 'cfconv_pool': 'sum'}, 'node_pooling_args': {'pooling_method': 'mean'}, 'depth': 8, 'gauss_args': {'bins': 25, 'distance': 8, 'offset': 0.0, 'sigma': 0.4}, 'verbose': 10, 'last_mlp': {'use_bias': [True, True, True], 'units': [128, 64, 1], 'activation': ['kgcnn>shifted_softplus', 'kgcnn>shifted_softplus', 'linear']}, 'output_embedding': 'graph', 'output_to_tensor': True, 'use_output_mlp': False, 'output_mlp': None}
+21/21 [==============================] - 0s 18ms/step - loss: 0.2184 - mean_absolute_error: 0.2184
+2/2 [==============================] - 0s 9ms/step - loss: 0.2524 - mean_absolute_error: 0.2524
+2/2 [==============================] - 0s 9ms/step - loss: 0.1710 - mean_absolute_error: 0.1710
+[0.1532311737537384, 0.2282261699438095, 0.21843676269054413]
+0.199964702129364
+0.033286384898524944
+[0.1846841275691986, 0.21180137991905212, 0.2524259388446808]
+0.21630381544431052
+0.02783812964221426
+[0.1446733921766281, 0.21377019584178925, 0.17096824944019318]
+0.17647061248620352
+0.028475709748287007
+WARNING:kgcnn.model.utils:Model kwargs: Overwriting dictionary of output_mlp with None
+INFO:kgcnn.model.utils:Updated model kwargs:
+INFO:kgcnn.model.utils:{'name': 'Schnet', 'inputs': [{'shape': (None,), 'name': 'node_number', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 3), 'name': 'node_coordinates', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 2), 'name': 'range_indices', 'dtype': 'int64', 'ragged': True}, {'shape': (None, 3), 'name': 'range_image', 'dtype': 'int64', 'ragged': True}, {'shape': (3, 3), 'name': 'graph_lattice', 'dtype': 'float32', 'ragged': False}], 'input_embedding': {'node': {'input_dim': 95, 'output_dim': 64}}, 'make_distance': True, 'expand_distance': True, 'interaction_args': {'units': 128, 'use_bias': True, 'activation': 'kgcnn>shifted_softplus', 'cfconv_pool': 'sum'}, 'node_pooling_args': {'pooling_method': 'mean'}, 'depth': 8, 'gauss_args': {'bins': 25, 'distance': 8, 'offset': 0.0, 'sigma': 0.4}, 'verbose': 10, 'last_mlp': {'use_bias': [True, True, True], 'units': [128, 64, 1], 'activation': ['kgcnn>shifted_softplus', 'kgcnn>shifted_softplus', 'linear']}, 'output_embedding': 'graph', 'output_to_tensor': True, 'use_output_mlp': False, 'output_mlp': None}
+21/21 [==============================] - 0s 16ms/step - loss: 0.1767 - mean_absolute_error: 0.1767
+2/2 [==============================] - 0s 10ms/step - loss: 0.1572 - mean_absolute_error: 0.1572
+2/2 [==============================] - 0s 9ms/step - loss: 0.1873 - mean_absolute_error: 0.1873
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int64
+[None, <tf.RaggedTensor [[[-2.910383050010179e-10, 3.813511284533888e-09, -6.984919326963324e-10],
+  [1.2514647096395493e-09, -3.3494416129542515e-09,
+   2.328306464727953e-10],
+  [2.3283064365386963e-10, 5.413312464952469e-09, 2.3283064382734198e-09],
+  ...,
+  [-0.004033823672216386, 0.005704688359401189, -0.006986785377193883],
+  [-0.00403382268268615, 0.005704684313968755, 0.006986782804233371],
+  [0.004033822449855506, -0.005704687529942021, -0.006986782920648693]],
+ [[5.58793544725919e-09, 1.257285475730896e-08, -3.469446951953614e-18],
+  [-8.119968697862384e-09, -7.945345714688301e-09,
+   1.1641532182693481e-10],
+  [2.619344741973395e-09, -9.124050848186016e-09, 1.3969838684284308e-09],
+  ...,
+  [0.005924680219322909, -0.008378758262551855, 0.010261858136800583],
+  [0.0059246823147987016, -0.008378758990147617, -0.01026185872615315],
+  [-0.00592467905516969, 0.00837875812430866, 0.010261855815770105]],
+ [[3.2887328411772276e-09, -1.5994373825378716e-08,
+   4.656612899098245e-10],
+  [-2.8958311304450035e-09, 5.222318577580154e-09, 2.328306484243592e-10],
+  [-1.979060471057892e-09, -5.675246939063072e-09,
+   -6.984919157827785e-10],
+  ...,
+  [0.006818691446824232, -0.009643071927712299, 0.011810318144853227],
+  [0.006818691701482749, -0.009643074845371302, -0.011810319389041979],
+  [-0.006818692516390001, 0.009643075209169183, 0.011810321600933094]],
+ ...,
+ [[-5.093170329928398e-10, -2.4010660126805305e-09,
+   -1.7462297970463614e-10],
+  [6.111804398082482e-10, -1.9826984498649836e-09, 2.910383050010179e-10],
+  [-1.5279510994122003e-09, -5.184119800105691e-09,
+   -6.984919283595237e-10],
+  ...,
+  [-0.003471028961939737, 0.004908781775156967, -0.006011998790199868],
+  [-0.003471028379863128, 0.004908781236736104, 0.006011997975292616],
+  [0.0034710285835899413, -0.004908778159006033, -0.006011997145833448]],
+ [[3.2014213493733457e-09, 4.532921593636274e-09,
+   -1.1641532269429655e-10],
+  [0.0008592120138928303, 0.00243019330810057, 0.0014881951210554785],
+  [-2.910383043504966e-10, 1.3351382222026587e-08, 6.984919292268854e-10],
+  ...,
+  [0.0075280728487996385, -0.011861412902362645, 0.014031133483513258],
+  [0.007528072907007299, -0.011861412014695816, -0.01403113357082475],
+  [-0.008673690506839193, 0.011051340901758522, 0.014031145168701187]],
+ [[1.309672366216208e-10, 1.273110683541745e-08, 5.820766073999506e-10],
+  [-3.3469405068611846e-10, -8.98216967470944e-09,
+   4.9873299934333204e-18],
+  [-1.6298145047097257e-09, -2.735760062932968e-09,
+   4.656612955476758e-10],
+  ...,
+  [0.00035037142879446037, -0.0004955197764502373, 0.0006068667921681481],
+  [0.0003503761181491427, -0.0004955194126523566, -0.0006068713009881321],
+  [-0.00035037658381043, 0.0004955178592354059, 0.0006068694383429829]]]>, None, None, <tf.Tensor: shape=(670, 3, 3), dtype=float64, numpy=
+array([[[-4.31996770e-02, -3.05467844e-02, -7.48240203e-02],
+        [-4.31996807e-02, -3.05467825e-02,  7.48240277e-02],
+        [ 8.63993540e-02, -3.05467807e-02, -9.74978320e-10]],
+       [[-2.36270111e-02, -1.67068336e-02, -4.09231968e-02],
+        [-2.36270111e-02, -1.67068355e-02,  4.09231931e-02],
+        [ 4.72540371e-02, -1.67068318e-02, -3.56521923e-10]],
+       [[-2.33563781e-02, -1.65154580e-02, -4.04544398e-02],
+        [-2.33563799e-02, -1.65154561e-02,  4.04544398e-02],
+        [ 4.67127413e-02, -1.65154580e-02, -1.39698386e-09]],
+       ...,
+       [[-2.15086266e-02, -1.52089000e-02, -3.72540355e-02],
+        [-2.15086266e-02, -1.52088990e-02,  3.72540392e-02],
+        [ 4.30172607e-02, -1.52089046e-02,  6.11180440e-10]],
+       [[-2.06855126e-02, -1.28042269e-02, -3.58283818e-02],
+        [-1.97038967e-02, -1.41924387e-02,  3.75285968e-02],
+        [ 4.21078354e-02, -1.38462158e-02,  1.27617712e-03]],
+       [[-5.13176136e-02, -3.62870432e-02, -8.88847262e-02],
+        [-5.13176210e-02, -3.62870246e-02,  8.88847187e-02],
+        [ 1.02635227e-01, -3.62870432e-02,  1.13504939e-09]]])>]
+[0.1766647845506668]
+0.1766647845506668
+0.0
+[0.15720118582248688]
+0.15720118582248688
+0.0
+[0.1873455047607422]
+0.1873455047607422
+0.0
+WARNING:kgcnn.model.utils:Model kwargs: Overwriting dictionary of output_mlp with None
+INFO:kgcnn.model.utils:Updated model kwargs:
+INFO:kgcnn.model.utils:{'name': 'Schnet', 'inputs': [{'shape': (None,), 'name': 'node_number', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 3), 'name': 'node_coordinates', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 2), 'name': 'range_indices', 'dtype': 'int64', 'ragged': True}, {'shape': (None, 3), 'name': 'range_image', 'dtype': 'int64', 'ragged': True}, {'shape': (3, 3), 'name': 'graph_lattice', 'dtype': 'float32', 'ragged': False}], 'input_embedding': {'node': {'input_dim': 95, 'output_dim': 64}}, 'make_distance': True, 'expand_distance': True, 'interaction_args': {'units': 128, 'use_bias': True, 'activation': 'kgcnn>shifted_softplus', 'cfconv_pool': 'sum'}, 'node_pooling_args': {'pooling_method': 'mean'}, 'depth': 8, 'gauss_args': {'bins': 25, 'distance': 8, 'offset': 0.0, 'sigma': 0.4}, 'verbose': 10, 'last_mlp': {'use_bias': [True, True, True], 'units': [128, 64, 1], 'activation': ['kgcnn>shifted_softplus', 'kgcnn>shifted_softplus', 'linear']}, 'output_embedding': 'graph', 'output_to_tensor': True, 'use_output_mlp': False, 'output_mlp': None}
+21/21 [==============================] - 0s 18ms/step - loss: 0.1924 - mean_absolute_error: 0.1924
+2/2 [==============================] - 0s 9ms/step - loss: 0.1985 - mean_absolute_error: 0.1985
+2/2 [==============================] - 0s 9ms/step - loss: 0.1803 - mean_absolute_error: 0.1803
+WARNING:kgcnn.model.utils:Model kwargs: Overwriting dictionary of output_mlp with None
+INFO:kgcnn.model.utils:Updated model kwargs:
+INFO:kgcnn.model.utils:{'name': 'Schnet', 'inputs': [{'shape': (None,), 'name': 'node_number', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 3), 'name': 'node_coordinates', 'dtype': 'float32', 'ragged': True}, {'shape': (None, 2), 'name': 'range_indices', 'dtype': 'int64', 'ragged': True}, {'shape': (None, 3), 'name': 'range_image', 'dtype': 'int64', 'ragged': True}, {'shape': (3, 3), 'name': 'graph_lattice', 'dtype': 'float32', 'ragged': False}], 'input_embedding': {'node': {'input_dim': 95, 'output_dim': 64}}, 'make_distance': True, 'expand_distance': True, 'interaction_args': {'units': 128, 'use_bias': True, 'activation': 'kgcnn>shifted_softplus', 'cfconv_pool': 'sum'}, 'node_pooling_args': {'pooling_method': 'mean'}, 'depth': 8, 'gauss_args': {'bins': 25, 'distance': 8, 'offset': 0.0, 'sigma': 0.4}, 'verbose': 10, 'last_mlp': {'use_bias': [True, True, True], 'units': [128, 64, 1], 'activation': ['kgcnn>shifted_softplus', 'kgcnn>shifted_softplus', 'linear']}, 'output_embedding': 'graph', 'output_to_tensor': True, 'use_output_mlp': False, 'output_mlp': None}
+[None, <tf.RaggedTensor [[[-5.093170329928398e-10, 1.025910023599863e-09, -1.746229927150622e-10],
+  [1.2369127935438207e-09, 3.41970007866621e-10, -1.7462297840359353e-10],
+  [8.58562999341006e-10, 7.8580342233181e-10, 4.656612851393349e-10],
+  ...,
+  [0.006761488504707813, -0.009562188279232942, 0.011711242943420075],
+  [0.0067614880099426955, -0.009562188730342314, -0.011711243278114125],
+  [-0.006761488242773339, 0.009562188090058044, 0.011711242084857076]],
+ [[-1.811713445931673e-09, 4.2018655221909285e-09,
+   -3.492459719860175e-10],
+  [-6.439222488552332e-10, -1.2314558262005448e-09,
+   -3.492459663481662e-10],
+  [2.82307155473685e-09, 2.86672729998827e-09, -1.3969838627905795e-09],
+  ...,
+  [-0.002947315282654017, 0.00416813023184659, -0.005104901843878906],
+  [-0.0029473163885995746, 0.004168130020843819, 0.005104904170366353],
+  [0.0029473165050148964, -0.004168132281847647, -0.005104901492813951]],
+ [[-2.222805049398313e-09, -1.3256794773042202e-08,
+   -1.164153261637435e-10],
+  [-1.891749005708543e-10, 5.660695023834705e-09, -1.164153235616583e-10],
+  [1.6880221669242357e-09, -4.94765117764473e-10, 6.984919331300132e-10],
+  ...,
+  [0.0017341469356324524, -0.002452468001138186, 0.0030036420930628083],
+  [0.0017341481579933316, -0.00245246945269173, -0.0030036446505619097],
+  [-0.0017341469938401133, 0.0024524740838387515, 0.0030036426715014386]],
+ ...,
+ [[-1.2369127944111824e-10, 8.587448974139988e-09, 3.710738370223121e-10],
+  [-1.0913936421275139e-10, 6.481059244833887e-09,
+   -1.5279510946417107e-10],
+  [-2.9103830456733704e-10, 7.566995918750763e-10,
+   -4.656612851393349e-10],
+  ...,
+  [-0.0023953868039825466, 0.0033875868539325893, -0.004148931322561111],
+  [-0.0023953860145411454, 0.003387586229109729, 0.004148931169766001],
+  [0.0023953860909387004, -0.0033875929275382077, -0.00414893154083984]],
+ [[-2.764863906400128e-10, 5.020410753786564e-09, 2.3283065709797657e-10],
+  [4.5110937034464893e-10, 3.5652192309498787e-10,
+   -9.313225711460316e-10],
+  [-7.275955825249841e-12, -1.04046193882823e-09, 7.275958462571626e-11],
+  ...,
+  [0.0033496438700240105, -0.00473710781079717, 0.0058017556912091095],
+  [0.0033496435135020874, -0.00473710924416082, -0.0058017551637021825],
+  [-0.0033496437245048583, 0.004737108669360168, 0.0058017543342430145]],
+ [[1.5352270557253411e-09, 3.434251993894577e-09, -5.820766568395697e-11],
+  [-3.390596252979966e-09, -7.174094207584858e-09,
+   -5.820765137248829e-11],
+  [-1.1641531835748786e-10, 2.852175384759903e-09,
+   -2.3283063498025225e-10],
+  ...,
+  [-0.000756224908400327, 0.0010694642260205, -0.0013098229246679693],
+  [-0.0007562253158539534, 0.0010694647062337026, 0.001309822724579135],
+  [0.0007562249666079879, -0.0010694656666601077, -0.0013098215604259167]]]>, None, None, <tf.Tensor: shape=(670, 3, 3), dtype=float64, numpy=
+array([[[-1.37668382e-02, -9.73462313e-03, -2.38448530e-02],
+        [-1.37668354e-02, -9.73462313e-03,  2.38448530e-02],
+        [ 2.75336765e-02, -9.73462500e-03,  1.51339918e-09]],
+       [[-2.88404562e-02, -2.03932859e-02, -4.99531329e-02],
+        [-2.88404562e-02, -2.03932840e-02,  4.99531329e-02],
+        [ 5.76809160e-02, -2.03932822e-02, -2.85217538e-09]],
+       [[-3.68579105e-02, -2.60624737e-02, -6.38397709e-02],
+        [-3.68579216e-02, -2.60624792e-02,  6.38397634e-02],
+        [ 7.37158582e-02, -2.60624848e-02,  1.39698386e-09]],
+       ...,
+       [[-8.87355674e-03, -6.27455581e-03, -1.53694544e-02],
+        [-8.87355674e-03, -6.27455581e-03,  1.53694544e-02],
+        [ 1.77471135e-02, -6.27455628e-03,  4.65661287e-10]],
+       [[-3.08625922e-02, -2.18231529e-02, -5.34555689e-02],
+        [-3.08625922e-02, -2.18231548e-02,  5.34555689e-02],
+        [ 6.17251731e-02, -2.18231492e-02, -4.65661287e-10]],
+       [[-3.44364047e-02, -2.43502185e-02, -5.96456043e-02],
+        [-3.44363973e-02, -2.43502203e-02,  5.96456081e-02],
+        [ 6.88728169e-02, -2.43502185e-02, -6.98491931e-10]]])>]
+[0.1766647845506668, 0.19241997599601746]
+0.18454238027334213
+0.007877595722675323
+[0.15720118582248688, 0.19851024448871613]
+0.1778557151556015
+0.020654529333114624
+[0.1873455047607422, 0.1803356409072876]
+0.1838405728340149
+0.003504931926727295
+21/21 [==============================] - 0s 18ms/step - loss: 0.2540 - mean_absolute_error: 0.2540
+2/2 [==============================] - 0s 9ms/step - loss: 0.2356 - mean_absolute_error: 0.2356
+2/2 [==============================] - 0s 8ms/step - loss: 0.2691 - mean_absolute_error: 0.2691
+[None, <tf.RaggedTensor [[[-3.190507414253113e-09, 1.979060471057892e-09, 5.204170427930421e-18],
+  [-6.8102963273093675e-09, 3.255991032347083e-09,
+   -2.3283064495491224e-10],
+  [3.026798367500305e-09, -3.536115400493145e-09, 1.6298145090465344e-09],
+  ...,
+  [-0.0030344229307956994, 0.004291330664273119, -0.005255772724922281],
+  [-0.0030344221158884466, 0.004291328110411996, 0.005255770785879577],
+  [0.0030344186816364527, -0.0042913287798000965, -0.005255768282950157]],
+ [[-6.868503987789154e-09, 6.766640581190586e-10, 2.3283064885804006e-10],
+  [3.856257535517216e-09, -2.7284841053187847e-09,
+   -2.3283064235282702e-10],
+  [3.7834979582911793e-10, 1.1641532182693481e-09,
+   1.7462298288676951e-09],
+  ...,
+  [0.0064283719402737916, -0.009091082385566551, 0.011134243781270925],
+  [0.0064283692627213895, -0.009091079497011378, -0.01113424330833368],
+  [-0.006428369524655864, 0.00909108370251488, 0.011134243744891137]],
+ [[6.257323543860938e-10, -1.7855199985206127e-08,
+   4.6566128470565404e-10],
+  [2.9103830413365617e-10, 1.1328666005283594e-08, 4.656612968487184e-10],
+  [4.656612873077393e-10, 4.3655745685100555e-10, -8.673617379884035e-19],
+  ...,
+  [1.7779821064323187e-06, -2.5052795535884798e-06,
+   3.0804076232016087e-06],
+  [1.7780112102627754e-06, -2.5052213459275663e-06,
+   -3.0805240385234356e-06],
+  [-1.7755955923348665e-06, 2.5079716579057276e-06,
+   3.0798837542533875e-06]],
+ ...,
+ [[4.5019987607655687e-10, -2.758042683126405e-09,
+   -1.164153235616583e-10],
+  [3.783497955038573e-10, -4.663206709665246e-09, 2.3283063671497572e-10],
+  [1.734723475976807e-18, 3.14321368932724e-09, -2.3283064417428667e-09],
+  ...,
+  [0.0018468660418875515, -0.0026118564419448376, 0.0031988645350793377],
+  [0.0018468628404662013, -0.0026118549503735267, -0.0031988620467018336],
+  [-0.0018468661583028734, 0.0026118556852452457, 0.0031988647242542356]],
+ [[-3.434251993460896e-09, 9.45146894082427e-09, -1.734723475976807e-18],
+  [3.943569026453736e-09, -9.476934792473912e-09, 2.3283063758233746e-10],
+  [-4.711182552473263e-10, 2.510205376893282e-10,
+   -2.9831426075172885e-10],
+  ...,
+  [0.0006648944417975144, -0.0009402918331034016, 0.0011516247832332738],
+  [0.000664895052977954, -0.000940291956794681, -0.0011516248996485956],
+  [-0.0006648940634477185, 0.0009402912510267925, 0.0011516248669067863]],
+ [[-5.820766264819088e-11, -1.0841176845133305e-09,
+   -2.3283063671497572e-10],
+  [1.2514647100732301e-09, -2.6338966563344e-09, -1.1641532269429655e-10],
+  [0.0014337586890178513, 0.0010138300403923495, 0.0012416743265930672],
+  ...,
+  [0.00663461881049443, -0.007862033482524566, 0.010249818908050656],
+  [0.0052008575075888075, -0.008875856889062561, -0.010249819883028977],
+  [-0.006634620112890843, 0.007862034835852683, 0.010249815895804204]]]>, None, None, <tf.Tensor: shape=(670, 3, 3), dtype=float64, numpy=
+array([[[-1.74827036e-02, -1.23621440e-02, -3.02809402e-02],
+        [-1.74826980e-02, -1.23621449e-02,  3.02809421e-02],
+        [ 3.49654108e-02, -1.23621458e-02,  2.21189111e-09]],
+       [[-1.15732234e-02, -8.18350352e-03, -2.00454406e-02],
+        [-1.15732253e-02, -8.18350352e-03,  2.00454425e-02],
+        [ 2.31464487e-02, -8.18351656e-03,  1.86264515e-09]],
+       [[-3.38515602e-02, -2.39366665e-02, -5.86326346e-02],
+        [-3.38515639e-02, -2.39366628e-02,  5.86326346e-02],
+        [ 6.77031353e-02, -2.39366647e-02, -1.10594556e-09]],
+       ...,
+       [[-3.03571448e-02, -2.14657430e-02, -5.25801145e-02],
+        [-3.03571485e-02, -2.14657448e-02,  5.25801256e-02],
+        [ 6.07143119e-02, -2.14657411e-02, -3.02679837e-09]],
+       [[-2.66452208e-02, -1.88410170e-02, -4.61508781e-02],
+        [-2.66452208e-02, -1.88410152e-02,  4.61508706e-02],
+        [ 5.32904193e-02, -1.88410077e-02, -1.57160684e-09]],
+       [[-3.22311074e-02, -2.24571750e-02, -5.83092868e-02],
+        [-3.22311036e-02, -2.24571731e-02,  5.90061136e-02],
+        [ 6.78454563e-02, -2.42003463e-02,  8.93262448e-04]]])>]
+[0.1766647845506668, 0.19241997599601746, 0.25403401255607605]
+0.2077062577009201
+0.03338414960036656
+[0.15720118582248688, 0.19851024448871613, 0.2356182336807251]
+0.19710988799730936
+0.032028935848984794
+[0.1873455047607422, 0.1803356409072876, 0.2691148817539215]
+0.21226534247398376
+0.04030043122239828

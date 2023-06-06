@@ -1,0 +1,1 @@
+{"epoch": 6, "_timestamp": 1684439220.1581717, "loss": 0.11541534215211868, "mean_absolute_error": 0.11541534215211868, "val_loss": 0.13086628913879395, "val_mean_absolute_error": 0.13086628913879395, "_runtime": 7210.0609395504, "_step": 756, "best_val_loss": 0.016979459673166275, "best_epoch": 198, "_wandb": {"runtime": 1069}}
